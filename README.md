@@ -26,5 +26,4 @@ sudo n stable
 sudo chown -R $USER /usr/local/bin
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
-- [Install Compiler Tools](http://docs.strongloop.com/display/SL/Installing+compiler+tools)
 - [Screen](https://help.ubuntu.com/community/Screen)
