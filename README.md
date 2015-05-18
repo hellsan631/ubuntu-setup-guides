@@ -16,4 +16,9 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 ```
-6. [Screen](https://help.ubuntu.com/community/Screen)
+6. Own your node directories
+```
+sudo chown -R $USER /usr/local/bin
+sudo chown -R $USER /usr/local/lib/node_modules
+```
+7. [Screen](https://help.ubuntu.com/community/Screen)
