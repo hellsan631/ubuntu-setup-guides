@@ -16,3 +16,4 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 ```
+6. [Screen](https://help.ubuntu.com/community/Screen)
