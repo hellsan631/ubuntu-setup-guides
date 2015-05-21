@@ -39,3 +39,9 @@ sudo apt-get install -y mongodb
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
 ```
+- Install Loopback/Bower
+```
+npm install -g strongloop
+npm install -g bower
+```
+- [Install Loopback StrongPm as service](http://strong-pm.io/prod/)
