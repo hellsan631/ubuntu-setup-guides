@@ -33,3 +33,9 @@ sudo apt-get dist-upgrade
 sudo apt-get install -y mongodb
 ```
 - [Screen](https://help.ubuntu.com/community/Screen)
+
+### Trouble Shooting
+- Redirect port traffic
+```
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+```
