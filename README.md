@@ -26,4 +26,10 @@ sudo n stable
 sudo chown -R $USER /usr/local/bin
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
+- Install Mongo
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install -y mongodb
+```
 - [Screen](https://help.ubuntu.com/community/Screen)
