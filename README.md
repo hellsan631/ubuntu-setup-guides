@@ -45,3 +45,5 @@ npm install -g strongloop
 npm install -g bower
 ```
 - [Install Loopback StrongPm as service](http://strong-pm.io/prod/)
+
+- [Save IP Tables Rules](http://askubuntu.com/questions/119393/how-to-save-rules-of-the-iptables)
