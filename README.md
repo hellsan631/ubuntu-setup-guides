@@ -47,3 +47,4 @@ npm install -g bower
 - [Install Loopback StrongPm as service](http://strong-pm.io/prod/)
 
 - [Save IP Tables Rules](http://askubuntu.com/questions/119393/how-to-save-rules-of-the-iptables)
+- [Setup Spamassassin](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-spamassassin-on-ubuntu-12-04)
