@@ -1,5 +1,5 @@
 # Linux Install Copy-pasta
-### Add some swap
+### 1. Add some swap
 ```
 sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
@@ -23,7 +23,7 @@ vm.swappiness = 10
 vm.vfs_cache_pressure = 50
 ```
 ====
-### [Add New User](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+### 2. [Add New User](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
 ```
 adduser hells
 gpasswd -a hells sudo
@@ -38,21 +38,21 @@ chmod 600 .ssh/authorized_keys
 exit
 ```
 ====
-### Update your system
+### 3. Update your system
 ```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 ```
 ====
-### Install Extra Packages (Git, MongoDB, Node/NPM)
+### 4. Install Extra Packages (Git, MongoDB, Node/NPM)
 ```
 sudo apt-get install -y build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip mongodb git nodejs npm
 ```
 ====
-### Login to other user (hells)
+### 5. Login to other user (hells)
 ====
-### Update NodeJS
+### 6. Update NodeJS
 ```
 sudo npm cache clean -f
 sudo npm install -g n
@@ -61,13 +61,13 @@ sudo chown -R $USER /usr/local/bin
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
 ====
-### Setup Persistant IP Routing
+### 7. Setup Persistant IP Routing
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3001
 sudo apt-get install iptables-persistent
 ```
 ====
-### Install Bower/Strongloop/PM
+### 8. Install Bower/Strongloop/PM
 ```
 npm install -g strongloop bower strong-pm
 sudo sl-pm-install
