@@ -13,8 +13,8 @@ Paste and Close (Ctrl+x and overwrite)
 ```
 Setup Swap
 ```
-sudo sysctl vm.swappiness = 10
-sudo sysctl vm.vfs_cache_pressure = 50
+sudo sysctl vm.swappiness=10
+sudo sysctl vm.vfs_cache_pressure=50
 sudo nano /etc/sysctl.conf
 ```
 End of File Paste and Close (ctrl+x and overwrite)
