@@ -38,7 +38,12 @@ chmod 600 .ssh/authorized_keys
 exit
 ```
 ====
-### 3. Update your system
+### 3. Add Mongo 3 Repo
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+```
+### 3.5 Update your system
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -47,7 +52,7 @@ sudo apt-get dist-upgrade
 ====
 ### 4. Install Extra Packages (Git, MongoDB, Node/NPM)
 ```
-sudo apt-get install -y build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip mongodb git nodejs npm
+sudo apt-get install -y build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip mongodb-org git nodejs npm
 ```
 ====
 ### 5. Login to other user (hells)
